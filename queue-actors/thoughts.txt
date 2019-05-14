@@ -1,0 +1,7 @@
+Actors: receive messages from specifiec zeromq port, depending on context can pass on, etc. Each is separate client/server combo
+
+Use protobuf to pass messages, serializing from byte arrays. Try parsing different message formats until one works
+
+How to keep track of which actors to subscribe to?
+
+Continuously subscribe to messages -> queue -> receive operates on queue

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+//import "poisonpill.proto";
+
+message TypeA {
+	string field1 = 1;
+	int32 field2 = 2;
+}
+
+message TypeB {
+	int32 field1 = 1;
+	int32 field2 = 2;
+	int32 field3 = 3;
+}
+
+message Message {
+	oneof messages {
+		TypeA a = 1;
+		TypeB b = 2;
+	//	PoisonPill pp = 3;
+	}
+}
